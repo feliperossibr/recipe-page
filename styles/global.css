@@ -36,7 +36,6 @@ p, li {
 }
 
 .header {
-
   & > img {
     width: 100%;
   }
@@ -132,11 +131,35 @@ p, li {
 }
 
 @media screen and (width >= 1280px) {
-  .nutrition {
-    
-    & > ul > li {
+  main {
+    display: flex;
+    background-color: var(--stone-100);
 
+    justify-content: center;
+  
+    & > .card-wrapper {
+      background-color: var(--white);
+      max-width: 50rem;
 
+      margin-block: 5rem;
+
+      border-radius: .6rem;
+
+      & > .header {
+        padding: 2rem;
+
+        & > img {
+        border-radius: .6rem;
+        }
+
+        & > h1 {
+          padding: 2rem 0;
+        }
+
+        & > p {
+          padding: 0;
+        }
+      }
     }
   }
 }
