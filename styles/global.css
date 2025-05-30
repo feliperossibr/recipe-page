@@ -20,3 +20,52 @@
   --ff-title: "Young Serif", serif;
   --ff-text: "Outfit", sans-serif;
 }
+
+.header {
+  
+  & > img {
+    width: 100%;
+  }
+}
+
+.preparation {
+  background-color: var(--rose-50);
+  font-family: var(--ff-text);
+  margin: 2rem;
+
+  border-radius: .8rem;
+
+  & > h3 {
+    color: var(--rose-800);
+    padding: 1rem;
+  }
+
+  & > ul {
+    margin-inline: 2.5rem;
+    padding-bottom: 1rem;
+
+    line-height: 1.8;
+
+    & > li {
+      padding: 0rem 1rem;
+   
+      & > span {
+        font-weight: 600;
+      }
+    }
+  }
+}
+
+h1 {
+  font-family: var(--ff-title);
+  padding: 2rem 2rem;
+}
+
+p {
+  font-family: var(--ff-text);
+  line-height: 1.8;
+}
+
+.padding-1 {
+  padding: 0rem 2rem;
+}
