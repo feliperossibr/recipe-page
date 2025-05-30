@@ -22,7 +22,7 @@
 }
 
 .header {
-  
+
   & > img {
     width: 100%;
   }
@@ -30,7 +30,6 @@
 
 .preparation {
   background-color: var(--rose-50);
-  font-family: var(--ff-text);
   margin: 2rem;
 
   border-radius: .8rem;
@@ -44,8 +43,6 @@
     margin-inline: 2.5rem;
     padding-bottom: 1rem;
 
-    line-height: 1.8;
-
     & > li {
       padding: 0rem 1rem;
    
@@ -56,16 +53,37 @@
   }
 }
 
-h1 {
+.ingredients {
+
+  & > h2 {
+    color: var(--brown-800);
+  }
+
+  & > ul {
+    margin-inline: 3.5rem;
+
+    & > li {
+      padding: 0rem 1rem;
+    }
+  }
+}
+
+h1, h2, h3 {
   font-family: var(--ff-title);
   padding: 2rem 2rem;
 }
 
-p {
+p, li {
   font-family: var(--ff-text);
   line-height: 1.8;
 }
 
 .padding-1 {
   padding: 0rem 2rem;
+}
+
+.separator {
+  height: 1px;
+  background-color: var(--stone-150);
+  margin: 1rem 2rem;
 }
