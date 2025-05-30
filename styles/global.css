@@ -96,6 +96,31 @@ p, li {
   }
 }
 
+.nutrition {
+  margin-bottom: 2rem;
+
+  & > p {
+    padding: 0rem 2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+  }    
+
+  & > ul {
+  list-style: none;
+  
+    & > .list {
+      display: flex;
+      justify-content: space-around;
+      padding: 0 3rem;
+    
+      & > .span {
+        color: var(--brown-800);
+        font-weight: 600;
+      }
+    }
+  }
+}
+
 .padding-1 {
   padding: 0rem 2rem;
 }
@@ -104,4 +129,14 @@ p, li {
   height: 1px;
   background-color: var(--stone-150);
   margin: 1rem 2rem;
+}
+
+@media screen and (width >= 1280px) {
+  .nutrition {
+    
+    & > ul > li {
+
+
+    }
+  }
 }
